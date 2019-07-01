@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://esputnik.com/api/v1/contact/564407320
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"channels":[{"type":"email","value":"test123@example.com"},{"type":"sms","value":"+79160001122"}],"fields":[{"id":98748,"value":"ж"}]},"groups":null,"formType":null}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - Basic d2ViZGV2b3BzQGJ1c2Zvci5jb206Szc0M3NmQTgzMjQ3Mg==
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 30 Jan 2019 15:02:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '44'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=D5CA4D95CAB4EC55E47278234BEDDB0A; Path=/api/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: Contact with id='564407320' has been updated
+    http_version: 
+  recorded_at: Wed, 30 Jan 2019 15:02:33 GMT
+recorded_with: VCR 4.0.0

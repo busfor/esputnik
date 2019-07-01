@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://esputnik.com/api/v1/contact/subscribe
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"channels":[{"type":"email","value":"test123@example.com"},{"type":"sms","value":"+79160001122"}],"fields":[{"id":98748,"value":"м"}]},"groups":null,"formType":null}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Authorization:
+      - Basic d2ViZGV2b3BzQGJ1c2Zvci5jb206Szc0M3NmQTgzMjQ3Mg==
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 30 Jan 2019 15:02:31 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '16'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - JSESSIONID=7E4D12C1AF51D0125FE5A6C92723D09C; Path=/api/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '{"id":564407320}'
+    http_version: 
+  recorded_at: Wed, 30 Jan 2019 15:02:32 GMT
+recorded_with: VCR 4.0.0
